@@ -1,4 +1,4 @@
-import { Tools } from '../models/tools';
+import { Tools } from './tools';
 
 describe('Tools', () => {
   it('should create an instance', () => {

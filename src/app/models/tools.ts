@@ -1,14 +1,14 @@
 export class Tools {
-    toolsId?: string = '';
-    TODnumber?: string = '';
-    toolDiameter: number = 0;
-    radius: number = 0;
-    toolMaterial?: string = '';
-    numberOfFlutes: number = 0;
-    toolDescription?: string = '';
+    toolsId?: string;
+    TODnumber?: string;
+    toolDiameter?: number;
+    radius?: number;
+    toolMaterial?: string;
+    numberOfFlutes?: number;
+    toolDescription?: string;
     toolImage: any;
 
-    constructor(toolsId: string, TODnumber: string, toolDiameter: number,radius: number, toolMaterial: string, numberOfFlutes: number, toolDescription: string, toolImage: any) {
+    constructor(toolsId?: string, TODnumber?: string, toolDiameter?: number, radius?: number, toolMaterial?: string, numberOfFlutes?: number, toolDescription?: string, toolImage?:any) {
         this.toolsId = toolsId;
         this.TODnumber = TODnumber;
         this.toolDiameter = toolDiameter;
@@ -23,10 +23,10 @@ export class Tools {
 export interface Tools {
     toolsId?: string;
     TODnumber?: string;
-    toolDiameter: number;
-    radius: number;
+    toolDiameter?: number;
+    radius?: number;
     toolMaterial?: string;
-    numberOfFlutes: number;
+    numberOfFlutes?: number;
     toolDescription?: string;
     toolImage: any;
 }
